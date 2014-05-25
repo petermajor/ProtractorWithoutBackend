@@ -1,0 +1,7 @@
+*.suo
+[Oo]bj
+[Bb]in
+[Dd]ebug/
+[Rr]elease/
+[P]ackages/
+node_modules/

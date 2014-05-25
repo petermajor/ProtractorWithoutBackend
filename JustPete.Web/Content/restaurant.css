@@ -1,0 +1,68 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    text-align: left;
+    font-size: 20px;
+    background: #f65d35;
+    color: #faebcc;
+}
+
+.header h1 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.header p {
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.search-bar {
+    background: #faebcc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.panel-restaurant:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 5px 5px 0 #999;
+    -webkit-box-shadow: 5px 5px 0 #999;
+    box-shadow: 5px 5px 0 #999;
+}
+
+.no-results-label {
+    font-size: 18px;
+}
+
+.searching-label {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.rest-content h3 {
+    color: #262626;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.rest-rating {
+    margin-top: 10px;
+    color: #737373;
+}
+
+.rest-menu {
+    color: #737373;
+    margin-top: 10px;
+}
+
+.rest-menu .loading {
+    margin-top: 10px;
+    font-size: 12px;
+}

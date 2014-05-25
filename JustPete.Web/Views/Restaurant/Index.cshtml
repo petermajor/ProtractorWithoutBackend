@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ng-app="justpete">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Just Pete</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="header" id="content">
+        <div class="container">
+            <h1>Just Pete</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div data-ng-view></div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/underscore")
+    @Scripts.Render("~/bundles/restangular")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/uibootstrap")
+    @Scripts.Render("~/bundles/app")
+</body>
+</html>

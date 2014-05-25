@@ -1,0 +1,31 @@
+﻿<div class="row">
+    <div class="col-xs-12">
+        <form class="search-bar" ng-submit="onPostcodeSearch()">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="input-group input-group-lg">
+                        <input id="searchInput" type="text" class="form-control" placeholder="Your postcode..." data-ng-model="postcode" autofocus>
+                        <span class="input-group-btn">
+                            <button id="searchButton" class="btn" data-ng-click="onPostcodeSearch()">Search</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-5 searching-label" data-ng-if="searchInProgress">searching...</div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="no-results-label" data-ng-if="restaurants.length === 0">No results found... how's your typing?</div>
+        <div class="panel panel-default panel-restaurant" data-ng-repeat="restaurant in restaurants | orderBy:'RatingStars':true">
+            <div class="panel-body">
+                <div class="rest-content">
+                    <h3 class="rest-name">{{restaurant.Name}}</h3>
+                    <div class="rest-rating">{{restaurant.RatingStars}} stars</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
