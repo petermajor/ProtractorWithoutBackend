@@ -1,5 +1,4 @@
 function passThrough($httpBackend) {
-    $httpBackend.whenGET(/^\/Content\//).passThrough();
     $httpBackend.whenGET(/^\/scripts\//).passThrough();
 };
 

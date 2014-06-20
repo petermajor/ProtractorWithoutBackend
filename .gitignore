@@ -3,5 +3,6 @@
 [Bb]in
 [Dd]ebug/
 [Rr]elease/
-[P]ackages/
+packages/*
+!packages/repositories.config
 node_modules/

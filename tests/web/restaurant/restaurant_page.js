@@ -8,11 +8,8 @@ RestaurantPage = function () {
     this.searchButton = $('#searchButton');
     this.noResultsFoundLabel = $('.no-results-label');
 
-    this.getRestaurants = function() {
-        return element.all(by.repeater("restaurant in restaurants"));
-    };
-    this.getRestaurantTitle = function(restaurant) {
-        return restaurant.findElement(by.css(".rest-name"));
+    this.getRestaurantTitles = function(restaurant) {
+        return element.all(by.repeater("restaurant in restaurants").column("{{restaurant.Name}}"));
     };
 };
 

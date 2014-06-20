@@ -17,16 +17,17 @@ describe('As a user', function () {
         restaurantPage.searchInput.sendKeys('w7');
         restaurantPage.searchButton.click();
 
-        var restaurants = restaurantPage.getRestaurants();
+        var restaurants = restaurantPage.getRestaurantTitles();
         expect(restaurants.count()).toBe(2);
         
         var restaurant1 = restaurants.get(0);
-        expect(restaurantPage.getRestaurantTitle(restaurant1).getText()).toBe("Pete's Restaurant");
+        expect(restaurant1.getText()).toBe("Pete's Restaurant");
 
         var restaurant2 = restaurants.get(1);
-        expect(restaurantPage.getRestaurantTitle(restaurant2).getText()).toBe("Bob's Restaurant");
+        expect(restaurant2.getText()).toBe("Bob's Restaurant");
         
         expect(restaurantPage.noResultsFoundLabel.isPresent()).toBeFalsy();
+
     });
 
     it('when I type in an invalid postcode then I see not found message', function () {
@@ -37,7 +38,7 @@ describe('As a user', function () {
         restaurantPage.searchInput.sendKeys('xxx');
         restaurantPage.searchButton.click();
 
-        var restaurants = restaurantPage.getRestaurants();
+        var restaurants = restaurantPage.getRestaurantTitles();
         expect(restaurants.count()).toBe(0);
         
         expect(restaurantPage.noResultsFoundLabel.isPresent()).toBeTruthy();
