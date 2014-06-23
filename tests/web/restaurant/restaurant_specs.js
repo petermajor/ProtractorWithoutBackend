@@ -17,6 +17,8 @@ describe('As a user', function () {
         restaurantPage.searchInput.sendKeys('w7');
         restaurantPage.searchButton.click();
 
+        browser.debugger();
+
         var restaurants = restaurantPage.getRestaurantTitles();
         expect(restaurants.count()).toBe(2);
         
