@@ -8,7 +8,7 @@ RestaurantPage = function () {
     this.searchButton = $('#searchButton');
     this.noResultsFoundLabel = $('.no-results-label');
 
-    this.getRestaurantTitles = function(restaurant) {
+    this.getRestaurantTitles = function() {
         return element.all(by.repeater("restaurant in restaurants").column("{{restaurant.Name}}"));
     };
 };
