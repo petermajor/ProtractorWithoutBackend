@@ -13,6 +13,7 @@
   "devDependencies": {
     "protractor": ">=0.14.0-0 <1.0.0",
     "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.13",
     "grunt-protractor-runner": "~1.0.0",
     "grunt-iisexpress": "*"
   },
