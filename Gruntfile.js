@@ -3,8 +3,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
       protractor: {
           options: {
-              //debug: true
-              keepAlive: true,
+              //debug: true,
+              keepAlive: true
           },
           testTarget: {
               configFile: "tests/web/protractor.conf.js"
